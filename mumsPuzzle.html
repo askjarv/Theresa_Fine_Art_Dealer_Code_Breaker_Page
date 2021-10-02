@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Roboto, sans-serif;
+        }
+        
+        .w3-allerta {
+            font-family: "Allerta Stencil", Sans-serif;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Theresa's Fine Art Dealer Code Breaker</h2>
+    <p>Please enter the first number between 1 and 100:</p>
+    <input class="w3-input" id="numb1">
+    <button type="button" class="w3-btn w3-blue" onclick="myFunction1()">Submit</button>
+    <p style="font-weight: bold" id="Result1"></p>
+
+    <p>Please enter the second number between 1 and 100:</p>
+    <input class="w3-input" id="numb2">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction2()">Submit</button>
+    <p style="font-weight: bold;" id="Result2"></p>
+
+    <p>Please enter the third number between 1 and 100:</p>
+    <input class="w3-input" id="numb3">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction3()">Submit</button>
+    <p style="font-weight: bold;" id="Result3"></p>
+
+    <p>Please enter the fourth number between 1 and 100:</p>
+    <input class="w3-input" id="numb4">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction4()">Submit</button>
+    <p style="font-weight: bold;" id="Result4"></p>
+
+    <p>Please enter the fifth number between 1 and 100:</p>
+    <input class="w3-input" id="numb5">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction5()">Submit</button>
+    <p style="font-weight: bold;" id="Result5"></p>
+
+    <p>Please enter the sixth number between 1 and 100:</p>
+    <input class="w3-input" id="numb6">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction6()">Submit</button>
+    <p style="font-weight: bold;" id="Result6"></p>
+
+    <p>Please enter the seventh number between 1 and 100:</p>
+    <input class="w3-input" id="numb7">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction7()">Submit</button>
+    <p style="font-weight: bold;" id="Result7"></p>
+
+    <p>If you have the sequence right - click below:</p>
+    <input class="w3-input" id="numb8">
+    <button class="w3-btn w3-blue" type="button" onclick="myFunction8()">Unlock</button>
+    <p class="w3-container w3-black w3-center w3-allerta" id="Result8"></p>
+
+
+
+    <script>
+        function myFunction1() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb1").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 27) {
+                text = "Correct - your second unlock key is 0";
+            } else {
+                text = "Wrong answer- please try again! ";
+            }
+            document.getElementById("Result1").innerHTML = text;
+        }
+
+        function myFunction2() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb2").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 97) {
+                text = "Correct - your second unlock key is 2";
+            } else {
+                text = "Wrong answer- please try again!";
+            }
+            document.getElementById("Result2").innerHTML = text;
+        }
+
+        function myFunction3() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb3").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 4) {
+                text = "Correct - your second unlock key is 1";
+            } else {
+                text = "Wrong answer- please try again!";
+            }
+            document.getElementById("Result3").innerHTML = text;
+        }
+
+        function myFunction4() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb4").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 5) {
+                text = "Correct - your second unlock key is 0";
+            } else {
+                text = "Wrong answer- please try again!";
+            }
+            document.getElementById("Result4").innerHTML = text;
+        }
+
+        function myFunction5() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb5").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 32) {
+                text = "Correct - your second unlock key is 9";
+            } else {
+                text = "Input not valid";
+            }
+            document.getElementById("Result5").innerHTML = text;
+        }
+
+        function myFunction6() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb6").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 8) {
+                text = "Correct - your second unlock key is 8";
+            } else {
+                text = "Input not valid";
+            }
+            document.getElementById("Result6").innerHTML = text;
+        }
+
+        function myFunction7() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb7").value;
+            // If x is Not a Number or less than one or greater than 10
+            let text;
+            if (x == 1) {
+                text = "Correct - your second unlock key is 2";
+            } else {
+                text = "Input not valid";
+            }
+            document.getElementById("Result7").innerHTML = text;
+        }
+
+        function myFunction8() {
+            // Get the value of the input field with id="numb"
+            let x = document.getElementById("numb8").value;
+
+            if (x == "0210982") {
+                text = "Congratulations - you have solved the mystery and saved the day";
+            } else {
+                text = "You have failed to break the code- please try again";
+            }
+            document.getElementById("Result8").innerHTML = text;
+            var result = document.getElementById("Result8");
+            result.style.color = "red";
+            result.style.fontSize = "150%";
+
+        }
+    </script>
+
+</body>
+
+</html>
